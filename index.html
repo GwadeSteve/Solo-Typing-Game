@@ -14,8 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>TYPING</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="Resources/type.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Resources/type.png" type="image/x-icon">
+    <title>Typing Master</title>
 </head>
 
 <body class="Dark">
@@ -32,8 +34,8 @@
                     <p>PLAYER</p>
                 </div>
                 <div class="moving-bicycle wide" style="transform: translateY(-50px);">
-                    <img src="Images and Resources/Bicycle1.png" width="70px" height="70px" style="transform: translateY(8px); z-index: 100;" class="bike">
-                    <img src="Images and Resources/Flag.png" width="60px" height="60px" style="z-index: -10;">
+                    <img src="Resources/Bicycle1.png" width="70px" height="70px" style="transform: translateY(8px); z-index: 100;" class="bike">
+                    <img src="Resources/Flag.png" width="60px" height="60px" style="z-index: -10; position:absolute; left:800px;">
                 </div>
                 <div class="Stats">
                     <h3>STATISTICS</h3>
@@ -64,7 +66,9 @@
                 </div>
             </div>
         </div>
-        <script src="script.js"></script>
+        <audio src="Resources/short-success-sound-glockenspiel-treasure-video-game-6346.mp3" id="correctSound"></audio>
+        <audio src="Resources/error-call-to-attention-129258.mp3" id="incorrectSound"></audio>
+        <script src="scripts/script.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,9 @@ const typingText = document.querySelector(".typing-text p"),
     wpmTag = document.querySelector(".wpm span"),
     precisionTag = document.querySelector(".precision span"),
     timeTag = document.querySelector(".time span"),
-    bike = document.querySelector(".moving-bicycle .bike");
+    bike = document.querySelector(".moving-bicycle .bike"),
+    Audio1 = document.getElementById("correctSound"),
+    Audio2 = document.getElementById("incorrectSound");
 
 function toggleTheme() {
     const body = document.body;
@@ -89,6 +91,9 @@ function initTyping() {
         if (characters[charIndex].innerText == typedChar) {
             characters[charIndex].classList.remove("incorrect");
             characters[charIndex].classList.add("correct");
+            Audio1.currentTime = 0; // Reset the sound to the beginning
+            Audio1.playbackRate = 2.5;
+            Audio1.play();
             prevCharIndex = charIndex; // Update prevCharIndex
             charIndex++; // Increment charIndex
             distance = distance + Move; // Move bike forward
@@ -100,7 +105,10 @@ function initTyping() {
                 bike.style.marginLeft = `${distance}px`;
             }
             characters[charIndex].classList.add("incorrect");
-            inpField.focus(); // Focus the input field
+            inpField.focus();
+            Audio2.currentTime = 0; // Reset the sound to the beginning
+            Audio2.playbackRate = 2.5;
+            Audio2.play(); // Focus the input field
             return; // Do not proceed if the character is mistyped
         }
         characters.forEach((span, index) => {
