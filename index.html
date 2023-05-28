@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>TYPING</title>
+</head>
+
+<body class="Dark">
+    <header class="Navbar">
+        <span class="Name"><a href="#">Typing Game</a></span>
+        <ul>
+            <button id="Theme">THEME</button>
+        </ul>
+    </header>
+    <div class="Spaces">
+        <div class="Space1">
+            <div class="result-details">
+                <div class="Username child" style="transform: translateY(-50px);">
+                    <p>PLAYER</p>
+                </div>
+                <div class="moving-bicycle wide" style="transform: translateY(-50px);">
+                    <img src="Images and Resources/Bicycle1.png" width="70px" height="70px" style="transform: translateY(8px); z-index: 100;" class="bike">
+                    <img src="Images and Resources/Flag.png" width="60px" height="60px" style="z-index: -10;">
+                </div>
+                <div class="Stats">
+                    <h3>STATISTICS</h3>
+                    <div class="metrics">
+                        <div class="wpm">
+                            <p>Speed : </p>
+                            <span> 0</span>wpm
+                        </div>
+                        <div class="precision">
+                            <p>Precision : </p>
+                            <span> 0</span>%
+                        </div>
+                        <div class="time">
+                            <p>Time : </p>
+                            <span>00:00:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Space2">
+                <input type="text" class="input-field-text" style="background:transparent; display: none;">
+                <div class="typing-text">
+                    <p></p>
+                </div>
+                <div class="Input-and-try-again">
+                    <input type="text" class="input-field">
+                    <button>Try Again</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
