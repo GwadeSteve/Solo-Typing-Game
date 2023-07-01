@@ -12,6 +12,8 @@ The game features a user-friendly interface that immerses you in a captivating e
 
 Whether you're a student, professional, or simply looking to enhance your typing skills, Typing Master provides an enjoyable and effective way to become a faster and more accurate typist. Sharpen your fingers, embrace the challenge, and become a typing master!
 
+You can try the game directly from here : https://typing-master-gs.netlify.app/
+
 ## Key features
 
  - Engaging and interactive typing game
